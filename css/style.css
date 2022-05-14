@@ -94,7 +94,7 @@ a {
   font-family: "Shrikhand", cursive;
   font-size: 40px;
   height: 95px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgb(149 157 165 / 18%) 0px 3px 2px;
   position: sticky;
   top: 0;
   display: flex;
@@ -176,7 +176,7 @@ footer .material-icons.footerIcon {
 .favorite {
   cursor: pointer;
   opacity: 0%;
-  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -306,13 +306,14 @@ footer .material-icons.footerIcon {
 }
 
 .locationItem {
+  box-shadow:black 30px;
+  gap: 20px;
+  padding: 20px;
   background: #eaeaea;
-  font-weight: 500;
-  padding: 32px;
+  /* font-weight: 500; */
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
 }
 
 .restaurantItem img{
@@ -522,12 +523,11 @@ footer .material-icons.footerIcon {
   overflow: hidden;
   white-space: nowrap;
 }
-.menuItem .menuInfo .menuText .menuTitle {
-  font-size: 1.6rem;
-  font-weight: 400;
+/* .menuItem .menuInfo .menuText .menuTitle {
   overflow: hidden;
   text-overflow: ellipsis;
-}
+} */
+
 .menuItem .menuInfo .menuText .menuDetails {
   font-weight: 200;
   overflow: hidden;
