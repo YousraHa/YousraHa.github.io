@@ -1,0 +1,297 @@
+.menuRestaurantImage {
+  object-fit: cover;
+  width: 100%;
+  max-height: 30rem;
+}
+
+.menuWrapper {
+  width: 100%;
+  border-radius: 4rem 4rem 0 0;
+  background: rgb(245, 245, 245);
+  padding: 2rem;
+  position: relative;
+  margin-top: -4rem;
+}
+
+.menuHeader {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuRestaurantTitle {
+  /* font-family: var.$fontTwo; */
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.allMenus {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menuCategoryTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+
+}
+.menuCategoryTitle:after {
+  content: "";
+  width: 5rem;
+  height: 0.5rem;
+  background-color: green;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+}
+
+.menuItem {
+  background: white;
+  height: 7rem;
+  border-radius: 15px;
+  box-shadow: white;
+  display: flex;
+  animation: slideup 1s forwards;
+  opacity: 0;
+  }
+
+  .menuInfo {
+    padding: 1.5rem;
+    max-width: 100%;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    
+}
+.menuDetails {
+    font-weight: 200;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.menuText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+
+  
+}
+.menuTitle {
+    font-size: 1.6rem;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.menuPrice {
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+}
+
+  .menuSelection {
+    cursor: pointer;
+    height: auto;
+    width: 0;
+    opacity: 0;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+
+}
+.checkIcon {
+  font-size: 3rem;
+  color: white;
+  transform: rotate(360deg);
+  transition: 0.4s ease-in-out;
+}
+
+  /* &:hover .menuSelection {
+    opacity: 100%;
+    width: 7rem;
+  }
+
+  &:hover .checkIcon {
+    transform: rotate(0deg);
+  } */
+/* } */
+
+@media (min-width: 600px) {
+  .menuRestaurantImage {
+    min-height: 40rem;
+  }
+
+  .menuRestaurantTitle {
+    font-size: 3.5rem;
+  }
+
+  .menuHeader {
+    justify-content: center;
+  }
+
+  .menuWrapper {
+    padding: 4rem;
+    border-radius: 0;
+  }
+
+  .allMenus {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .allMenus {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.3;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.header {
+  background: white;
+  z-index: 2;
+  font-size: 2.5rem;
+  height: 6rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+
+/* .backLink {
+    margin-left: 2rem;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  } */
+
+  /* .headerLogo {
+    margin: auto;
+    height: 3rem;
+  } */
+}
+
+main {
+  position: relative;
+}
+
+footer {
+  width: 100%;
+  background: #353535;
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  /* .footerTitle {
+    font-family: var.$fontTwo;
+    font-style: italic;
+    font-weight: 700;
+    margin: 1rem 0rem;
+  } */
+/* 
+  .footerLink {
+    margin: 0.5rem 0rem;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+  } */
+
+  /* .material-icons.footerIcon {
+    font-size: 1.5rem;
+  } */
+}
+
+
+
+@keyframes slideup {
+    from {
+      transform: translatey(20px);
+      opacity: 0%;
+    }
+  
+    to {
+      transform: translatey(0px);
+      opacity: 100%;
+    }
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0%;
+    }
+  
+    to {
+      opacity: 100%;
+    }
+  }
+  
+  @keyframes fadeout {
+    from {
+      opacity: 100%;
+    }
+  
+    to {
+      opacity: 0%;
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes spinner {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spinneroff {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(0deg);
+    }
+  }
