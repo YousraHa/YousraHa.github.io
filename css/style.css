@@ -8,14 +8,7 @@
     opacity: 100%;
   }
 }
-@keyframes fadein {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
+
 @keyframes fadeout {
   from {
     opacity: 100%;
@@ -33,20 +26,6 @@
     transform: rotate(360deg);
   }
 }
-@keyframes spinneroff {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes leftright{
-  0% { left: 0;}
-  50%{ left : 100%;}
-  100%{ left: 0;}
-}
 
 @keyframes spin{
   0% {
@@ -56,10 +35,6 @@
     transform: rotate(360deg);
   }
 }
-
-/* .resto_card:nth-child(n + 4){
-  grid-column: 2;
-} */
 
 .favoriteIcon {
   cursor: pointer;
@@ -116,9 +91,7 @@ a {
   text-decoration: inherit;
 }
 
-
 /* HEADER */
-
 
 .header {
   background: white;
@@ -166,7 +139,7 @@ main {
   width: min-content;
   white-space: nowrap;
   margin: 45px auto;
-  border-radius: 30px;
+  border-radius: 40px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
@@ -179,7 +152,6 @@ main {
 
 
 footer {
-  /* width: 100%; */
   background: #353535;
   color: white;
   padding: 50px;
@@ -269,18 +241,6 @@ footer .material-icons.footerIcon {
   animation: spinner 0.8s 0.2s 5;
   position: absolute;
 }
-/* 
-.spinnerSmall {
-  position: absolute;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  border: 25px solid rgba(161, 160, 160, 0);
-  border-top: 25px solid #99e2d0;
-  border-left: 25px solid #99e2d0;
-  border-bottom: 25px solid #99e2d0;
-  animation: spinneroff 0.8s 0.2s 5;
-} */
 
 .ctn {
   padding: 3rem 23px;
@@ -290,11 +250,9 @@ footer .material-icons.footerIcon {
 }
 
 .locationItem {
-  /* box-shadow:black 30px; */
   gap: 20px;
   padding: 20px;
   background: #eaeaea;
-  /* font-weight: 500; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -307,7 +265,6 @@ footer .material-icons.footerIcon {
 
 .fonctionnement_ctn {
   display: grid;
-  /* row-gap: 32px; */
 }
 
 .gridList{
@@ -401,11 +358,12 @@ footer .material-icons.footerIcon {
 }
 
 @media (min-width: 650px) {
-  .fonctionnement_ctn, .gridList {
-    /* grid-template-columns: 50% auto; */
-    /* grid-template-columns:repeat(auto-fit, minmax(25rem, 1fr)); */
+  .gridList {
     grid-template-columns: 50% auto;
     column-gap: 32px;
+  }
+  .fonctionnement_ctn{
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   }
 
   footer nav{
@@ -420,15 +378,11 @@ footer .material-icons.footerIcon {
     justify-content: center;
   }
 
-  /* .resto_card:nth-child(n + 4){
-    grid-column: 2;
-  } */
-
   .homeSsection {
     padding: 6rem 4rem;
   }
   .item {
-    height: 640px;
+    height: 500px;
     background: none;
     color: white;
     position: relative;
@@ -455,7 +409,6 @@ footer .material-icons.footerIcon {
 }
 
 .menuWrapper {
-  /* width: 100%; */
   border-radius: 4rem 4rem 0 0;
   background: whitesmoke;
   padding: 20px;
@@ -536,10 +489,6 @@ footer .material-icons.footerIcon {
   overflow: hidden;
   white-space: nowrap;
 }
-/* .cardMenu .menuInfo .menuText .menuTitle {
-  overflow: hidden;
-  text-overflow: ellipsis;
-} */
 
 .cardMenu .menuInfo .menuText .menuDetails {
   font-weight: 200;
@@ -567,7 +516,6 @@ footer .material-icons.footerIcon {
 .cardMenu .menuIcon .checkIcon {
   font-size: 30px;
   color: white;
-  /* transform: rotate(360deg); */
   transition: 0.4s ease-in-out;
 }
 
@@ -581,10 +529,6 @@ footer .material-icons.footerIcon {
 }
 
 @media (min-width: 600px) {
-  /* .menuRestaurantImage {
-    min-height: 640px;
-  } */
-
   .menuRestaurantTitle {
     font-size: 3.5rem;
   }
@@ -594,7 +538,6 @@ footer .material-icons.footerIcon {
   }
 
   .menuWrapper {
-    /* padding: 4rem; */
     border-radius: 0;
   }
 
@@ -618,40 +561,13 @@ footer .material-icons.footerIcon {
   color: white;
   padding: 1.5rem 3rem;
   text-align: center;
-  /* background: var.$colorPink; */
-  /* background: var.$gradientPurple; */
   background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-
   width: 190px;
-  /* white-space: nowrap; */
   margin: 4rem auto;
   border-radius: 30px;
-  /* box-shadow: var.$shadowLight; */
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 .commanderButton:hover {
   filter: brightness(1.1);
-  /* box-shadow: var.$shadowHeavy; */
 }
-
-/* @keyframes fadein {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-@keyframes fadeout {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0%;
-    visibility: hidden;
-  }
-} */
-
-
-
