@@ -91,6 +91,7 @@
 .img {
   height: 150px;
   animation: spin 2.5s linear infinite;
+  color: #ff79da;
 }
 
 
@@ -442,7 +443,7 @@ footer .material-icons.footerIcon {
     content: "";
     z-index: -1;
     position: absolute;
-    background: url("../img/pizzabg.gif") center/cover;
+    background: url("../img/bg.jpg") center/cover;
   }
 }
 
