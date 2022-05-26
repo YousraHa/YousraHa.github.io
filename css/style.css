@@ -442,7 +442,7 @@ footer .material-icons.footerIcon {
     content: "";
     z-index: -1;
     position: absolute;
-    background: url("../5361616.gif") center/cover;
+    background: url("../img/pizzabg.gif") center/cover;
   }
 }
 
