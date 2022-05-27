@@ -261,7 +261,6 @@ footer .material-icons.footerIcon {
 
 .resto_card img{
   height: 180px;
-  width: 335px;
 }
 
 .fonctionnement_ctn {
@@ -327,7 +326,7 @@ footer .material-icons.footerIcon {
 .resto_card {
   width: 100%;
   min-width: 2.48px;
-  border-radius: 32px;
+  border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
   position: relative;
@@ -340,10 +339,9 @@ footer .material-icons.footerIcon {
 }
 
 .resto_card .resto_img {
-  height: 18rem;
   object-fit: cover;
   width: 100%;
-  border-radius: 32px 32px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .restaurantInfo {
@@ -544,7 +542,7 @@ footer .material-icons.footerIcon {
     background: none;
     color: white;
     position: relative;
-    background: rgba(68, 52, 86, 0.722);
+    background: rgba(60, 52, 86, .3);
   }
 
   .item::after {
@@ -555,7 +553,7 @@ footer .material-icons.footerIcon {
     content: "";
     z-index: -1;
     position: absolute;
-    background: url("../img/bg.jpg") center/cover;
+    background: url("../img/bg.jpg") center/415px;
   }
 
   .menuRestaurantTitle {
