@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
 @keyframes slideup {
   from {
     transform: translatey(20px);
@@ -74,11 +80,9 @@
   color: #ff79da;
 }
 
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
+/* #fonctionnement{
+  background-color: rgba(153, 226, 208, .1 );
+} */
 
 html {
   font-size: 62.5%;
@@ -410,7 +414,7 @@ footer .material-icons.footerIcon {
 }
 
 .menuMainTitle {
-  font-size: 32px;
+  font-size: 20px;
   margin-bottom: 1rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -435,6 +439,11 @@ footer .material-icons.footerIcon {
   display: flex;
   animation: slideup 1s forwards;
   opacity: 0;
+}
+
+.menuTitle{
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
